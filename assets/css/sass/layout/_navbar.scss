@@ -1,0 +1,32 @@
+.navbar {
+  padding: 10px $px;
+  border-bottom: 2px solid gray ;
+  overflow: hidden;
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__bars {
+    float: right;
+
+    @include response-to('device-medium') {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    //clear: right;
+    @include response-to('device-medium') {
+      display: inline-block;
+    }
+  }
+
+  &__item {
+    @include response-to('device-medium') {
+      display: inline-block;
+    }
+  }
+
+}

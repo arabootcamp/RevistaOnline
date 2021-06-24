@@ -1,0 +1,23 @@
+
+//Color Scheme
+//First scheme
+$granite-gray:#cacdce;
+$quick-gray:#e3e5e6;
+$light-gray:#f2f4f5;
+
+//Font
+$font: monospace;
+
+//Padding
+$p-top:20px;
+$p-bottom: 20px;
+$px: 7px;
+$py:20px;
+
+//Device variables
+$map-breakpoints: (
+  'device-small': (min-width: 575.98px),
+  'device-medium': (min-width: 767.98px),
+  'device-large': (min-width: 991.98px),
+  'device-xlarge': (min-width: 1199.98px),
+);

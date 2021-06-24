@@ -1,0 +1,64 @@
+//Grid navbar, main, aside y footer
+.container{
+  max-width: 1400px;
+  margin:auto;
+  
+  @include response-to('device-small') {
+    display: grid;
+    grid: "navbar navbar" 
+    "main aside"
+    "section-newsletter section-newsletter"
+    "footer footer"/ 
+    2fr 1fr;
+  }
+
+}
+
+.navbar {
+  @include response-to('device-small') {
+    grid-area: navbar;
+  }
+}
+
+.main {
+  @include response-to('device-small') {
+    grid-area: main;
+  }
+}
+
+.aside {
+  display: none;
+  @include response-to('device-small') {
+    display: block;
+    grid-area: aside;
+  }
+}
+
+.section-newsletter {
+  @include response-to('device-small') {
+    grid-area: section-newsletter;
+  }
+}
+
+.footer {
+  @include response-to('device-small') {
+    grid-area: footer;
+  }
+}
+
+//Grid section news
+.main {
+ @include response-to('device-small') {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: 350px;
+   gap: 10px;
+ }
+ @include response-to('device-large') {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: 500px;
+   gap: 10px;
+ }
+
+}

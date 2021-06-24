@@ -1,0 +1,17 @@
+.aside{
+ padding: 0 $px; 
+ padding-top: $p-top;
+}
+
+.outstanding-news {
+
+  &__img {
+    width: 100%;
+    height: 40vw;
+
+@include response-to('device-medium') {
+      height: auto;
+    }
+  }
+
+}

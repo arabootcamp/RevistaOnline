@@ -1,9 +1,21 @@
 // main.scss # Manifest File
 
 //abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 //vendors
 //base
+@import 'base/reset';
+@import 'base/typography';
 //layout
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/main-tag';
+@import 'layout/section-news';
+@import 'layout/section-newsletter';
+@import 'layout/form';
+@import 'layout/aside';
+@import 'layout/footer';
 //components
 //pages
 //themes
