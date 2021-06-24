@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  border-width: 0;
+
+  &--form {
+    background-color: coral;
+    color: white;
+
+    &:hover {
+      background-color: steelblue;
+    }
+  }
+
+  &--navbar {
+    background-color: steelblue;
+    color: white;
+
+    &:hover {
+      background-color: coral;
+    }
+  }
+}

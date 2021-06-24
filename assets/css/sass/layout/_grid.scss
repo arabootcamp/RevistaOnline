@@ -1,15 +1,14 @@
 //Grid navbar, main, aside y footer
-.container{
+.container {
   max-width: 1400px;
-  margin:auto;
-  
+  margin: auto;
+
   @include response-to('device-small') {
     display: grid;
-    grid: "navbar navbar" 
-    "main aside"
-    "section-newsletter section-newsletter"
-    "footer footer"/ 
-    2fr 1fr;
+    grid: "navbar navbar"
+      "main aside"
+      "section-newsletter section-newsletter"
+      "footer footer"/ 2fr 1fr;
   }
 
 }
@@ -28,6 +27,7 @@
 
 .aside {
   display: none;
+
   @include response-to('device-small') {
     display: block;
     grid-area: aside;
@@ -48,17 +48,18 @@
 
 //Grid section news
 .main {
- @include response-to('device-small') {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-auto-rows: 350px;
-   gap: 10px;
- }
- @include response-to('device-large') {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-auto-rows: 500px;
-   gap: 10px;
- }
+  @include response-to('device-small') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: calc(320px + (100vw - 575.98px)/416*100);
+    gap: 10px;
+  }
+
+  @include response-to('device-large') {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 440px;
+    gap: 10px;
+  }
 
 }

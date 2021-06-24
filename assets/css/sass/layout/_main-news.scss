@@ -1,9 +1,15 @@
+//"main-news" just to differentiate it from the manifest "main.scss"
+.main {
+  padding: 0 $px;
+  padding-bottom: $p-bottom;
+}
+
 .news {
   width: 100%;
   padding-top: $p-top;
 
-  @include response-to('device-small') {
-    padding-top: 20px;
+  &__title {
+    padding-bottom: 10px;
   }
 
   &__img {
@@ -15,7 +21,7 @@
       height: calc(200px + (100vw - 575.98px)/416*100);
     }
 
-    @include response-to('device-xlarge') {
+    @include response-to('device-large') {
       max-width: 300px;
       height: 300px;
     }

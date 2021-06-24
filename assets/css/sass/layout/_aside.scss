@@ -1,17 +1,49 @@
-.aside{
- padding: 0 $px; 
- padding-top: $p-top;
+.aside {
+  padding: 0 $px;
+
+  @include response-to('device-small') {
+    padding-left: 10%;
+  }
+
+  &__title {
+    padding: $p-top 0 10px 0;
+  }
+
+  &__about-us,
+  &__tags {
+    padding-bottom: $p-bottom;
+    border-bottom: 1px solid gray;
+  }
+
+  &__ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+    position: relative;
+
+    &:hover{
+      background-color: coral ;
+      width: calc(100% + 10px);
+      left:-10px;
+    }
+
+  }
+
 }
 
 .outstanding-news {
 
+  padding-bottom: 10px;
+
   &__img {
     width: 100%;
-    height: 40vw;
-
-@include response-to('device-medium') {
-      height: auto;
-    }
+    height: auto;
   }
 
 }

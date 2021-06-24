@@ -2,7 +2,9 @@
   padding: $py $px;
   background-color: $light-gray;
   text-align: center;
-  &__title, &__p{
+
+  &__title,
+  &__p {
     padding: 15px 5% 0 5%;
   }
 }

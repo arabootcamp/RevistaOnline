@@ -1,7 +1,20 @@
 .navbar {
   padding: 10px $px;
-  border-bottom: 2px solid gray ;
+  border-bottom: 2px solid gray;
   overflow: hidden;
+
+  &__a {
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color:coral;
+      font-weight: bold;
+    }
+  }
+
+  @include response-to('device-medium') {
+    padding: 15px $px;
+  }
 
   &__logo {
     display: inline-block;
@@ -17,16 +30,24 @@
 
   &__menu {
     display: none;
-    //clear: right;
+    clear: right;
+
+    @include response-to('device-medium') {
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  &__li {
     @include response-to('device-medium') {
       display: inline-block;
     }
   }
 
-  &__item {
-    @include response-to('device-medium') {
-      display: inline-block;
-    }
-  }
+}
 
+.main{
+  @include response-to('device-medium') {
+  clear: right;
+  }
 }
