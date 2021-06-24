@@ -118,6 +118,12 @@ body {
     float: right;
   }
 }
+.navbar__ul {
+  padding-left: 7px;
+}
+.navbar__li {
+  list-style: none;
+}
 @media (min-width: 767.98px) {
   .navbar__li {
     display: inline-block;

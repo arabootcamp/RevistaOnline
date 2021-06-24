@@ -6,8 +6,9 @@
   &__a {
     text-decoration: none;
     color: black;
-    &:hover{
-      color:coral;
+
+    &:hover {
+      color: coral;
       font-weight: bold;
     }
   }
@@ -38,7 +39,13 @@
     }
   }
 
+  &__ul {
+    padding-left: $px;
+  }
+
   &__li {
+    list-style: none;
+
     @include response-to('device-medium') {
       display: inline-block;
     }
@@ -46,8 +53,8 @@
 
 }
 
-.main{
+.main {
   @include response-to('device-medium') {
-  clear: right;
+    clear: right;
   }
 }
