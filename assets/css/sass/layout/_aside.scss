@@ -1,10 +1,6 @@
 .aside {
   padding: 0 $px;
 
-  @include response-to('device-small') {
-    padding-left: 10%;
-  }
-
   &__title {
     padding: $p-top 0 10px 0;
   }
@@ -27,10 +23,10 @@
     color: white;
     position: relative;
 
-    &:hover{
-      background-color: coral ;
+    &:hover {
+      background-color: coral;
       width: calc(100% + 10px);
-      left:-10px;
+      left: -10px;
     }
 
   }
@@ -40,6 +36,10 @@
 .outstanding-news {
 
   padding-bottom: 10px;
+
+  &__title {
+    padding-top: 10px;
+  }
 
   &__img {
     width: 100%;

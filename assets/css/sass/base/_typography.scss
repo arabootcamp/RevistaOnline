@@ -1,3 +1,13 @@
 body {
   font-family: $font;
+  font-size: 1rem;
+}
+
+.button{
+  font-size: 1rem;
+}
+
+::placeholder{
+  font-size: 16px;
+  color:rgb(204, 204, 204);
 }

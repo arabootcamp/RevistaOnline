@@ -3,6 +3,7 @@
 //abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/utilities';
 //vendors
 //base
 @import 'base/reset';
@@ -12,7 +13,6 @@
 @import 'layout/navbar';
 @import 'layout/main-news';
 @import 'layout/section-newsletter';
-@import 'layout/form';
 @import 'layout/aside';
 @import 'layout/footer';
 //components

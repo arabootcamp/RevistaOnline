@@ -1,0 +1,120 @@
+.shadow {
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  }
+
+}
+
+.d-none {
+  display: none;
+
+  &-small {
+    @include response-to('device-small') {
+      display: none;
+    }
+  }
+
+  &-medium {
+    @include response-to('device-medium') {
+      display: none;
+    }
+  }
+
+  &-large {
+    @include response-to('device-large') {
+      display: none;
+    }
+  }
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      display: none;
+    }
+  }
+}
+
+.d-block {
+  display: block;
+
+  &-small {
+    @include response-to('device-small') {
+      display: block;
+    }
+  }
+
+  &-medium {
+    @include response-to('device-medium') {
+      display: block;
+    }
+  }
+
+  &-large {
+    @include response-to('device-large') {
+      display: block;
+    }
+  }
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      display: block;
+    }
+  }
+}
+
+.width-100 {
+  width: 100%;
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      width: 100%;
+    }
+  }
+}
+
+.width-75 {
+  width: 75%;
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      width: 75%;
+    }
+  }
+}
+
+.width-50 {
+  width: 50%;
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      width: 50%;
+    }
+  }
+}
+
+.width-25 {
+  width: 25%;
+
+  &-xlarge {
+    @include response-to('device-xlarge') {
+      width: 25%;
+    }
+  }
+}
+
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.margin-center-y {
+  margin: 20px auto;
+}
+
+.margin-right {
+  margin-left: auto;
+}
+
+.pt-10{
+  padding-top:10px;
+}
